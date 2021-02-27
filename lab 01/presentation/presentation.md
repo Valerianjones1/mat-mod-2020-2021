@@ -1,6 +1,6 @@
 ---
 ## Front matter
-lang: ru-RU
+lang: en-US
 title: Отсчет по лабораторной работе №1
 author: |
 	Valery A. Dinkiev\inst{1}

@@ -1,10 +1,10 @@
-# FILES = $(patsubst %.md, %.docx, $(wildcard *.md))
+FILES = $(patsubst %.md, %.docx, $(wildcard *.md))
 FILES += $(patsubst %.md, %.pdf, $(wildcard *.md))
 
 FILTERS =
 PDF_ENGINE =
 PDF_OPTIONS =
-PDF_FORMAT_OPTIONS = -t beamer --slide-level=2
+FORMAT_OPTIONS =
 
 # FILTERS += -F pandoc-citeproc
 FILTERS += -F pandoc-crossref
@@ -15,15 +15,10 @@ PDF_OPTIONS += --number-sections
 	-pandoc "$<" $(FILTERS) -o "$@"
 
 %.pdf: %.md
-	-pandoc "$<" $(FILTERS) $(PDF_ENGINE) $(PDF_OPTIONS) $(PDF_FORMAT_OPTIONS) -o "$@"
-
-%.pdf: %.docx
-	-unoconv "$<" "$@"
+	-pandoc "$<" $(FILTERS) $(PDF_ENGINE) $(PDF_OPTIONS) $(FORMAT_OPTIONS) -o "$@"
 
 all: $(FILES)
 	@echo $(FILES)
 
 clean:
 	-rm $(FILES) *~
-
-cleanall: clean
