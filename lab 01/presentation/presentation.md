@@ -62,8 +62,8 @@ section-titles: true
 2. *И так*.
 3. GitHub 
    3. [Мой профиль GitHub (ссылка)](https://github.com/Valerianjones1)
-4. Smth
-   4. Smhw
+4. И создавать подсписки
+   4. Smth
 
 ## {.standout}
 
