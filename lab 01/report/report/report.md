@@ -1,7 +1,7 @@
 ---
 # Front matter
 lang: ru-RU
-title: "Отсчет по лабораторной работе №1"
+title: "Отчет по лабораторной работе №1"
 subtitle: "Работа с GIT и Markdown"
 author: "Динькиев Валерий"
 

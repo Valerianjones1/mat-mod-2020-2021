@@ -1,7 +1,7 @@
 ---
 ## Front matter
 lang: en-US
-title: Отсчет по лабораторной работе №4
+title: Отчет по лабораторной работе №4
 author: |
 	Valery A. Dinkiev\inst{1}
 institute: |
